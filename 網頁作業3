@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset: UTC-8/>
+        <TITLE>陳威宇的網頁</TITLE>
+        <link rel="stylesheet" href="個人網站.css"/>
+        
+    </head>
+    <BODY>
+        <input type="button" value="google" onclick="location.href='https://www.google.com.tw/'" style=background-color:red>
+        <h1>我的個人網站</h1>
+        <p>大家好我是陳威宇</p>
+        <br>
+        <p>EMAIL:daniel74859641@gmail.com</p>
+        <br>
+        <p>生日:2000/07/17</p>
+        <br>
+        <p>台北人</p>
+    </BODY>
+</html>
