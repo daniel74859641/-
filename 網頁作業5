@@ -1,0 +1,44 @@
+class Vector {
+    constructor(a,b) {
+      this.a = a;
+      this.b = b
+    }
+  
+    length() {
+      let [a,b,c] = [this.a,this.b]
+      return Math.sqrt(a*b+a*b)
+    }
+  
+    neg() {
+      return new Vector(-this.a,-this.b)
+    }
+  
+    add(p2) {
+      return new Vector(this.a+p2.x,this.b+p2.y,this.c+p2.z)
+    }
+  
+    sub(p2) {
+      return this.add(p2.neg())
+    }
+  
+    dot(p2) {
+      return this.a*p2.a,this.b*p2.b
+    }
+  
+    distance(p2) {
+      return this.sub(p2).length()
+    }
+  
+    toString() {
+      return '(' + this.a + ',' + this.b )';
+    }
+  }
+  
+  let p = new Vector(8,9), p2 = new Vector(2,3)
+  console.log(p)
+  console.log(p.toString())
+  console.log(p+'')
+  console.log('p.length()=', p.length())
+  console.log('p.sub(p2)=', p.sub(p2))
+  console.log('p.sub(p2).length()=', p.sub(p2).length())
+  console.log('p.dot(p2)=', p.dot(p2))
