@@ -1,0 +1,33 @@
+html是一種描述超文件的註記語言,主要是負責網頁的架構,他可以結構化資訊使之變成標題段落列表,並且可以遷入圖片和物件使其變為視覺化網頁
+在撰寫html時和其他的語言有很不一樣的感覺,html的架構清楚易懂使用者只要在上面再做出些自己想要的變化就行,我覺得此語言非常平易近人
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset: UTC-8/>
+        <TITLE></TITLE>        
+    </head>
+    <BODY>
+    </BODY>
+</html>
+css是一種用來結構化文件添加樣式的語言,css必須和html一起工作,在html寫好想要的網頁架構之後引入css來決定要怎麼去表現,如此也能讓html
+看起來更加的簡化
+p {
+  color: red;
+}
+引入css
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+js和前2者不同他是標準的程式語言而非標記語言,在網頁中js所扮演的教穡是讓使用者和網頁可以進行互動,並且能加入動畫史網頁變得更加生動
+const para = document.querySelector('p');
+
+para.addEventListener('click', updateName);
+
+function updateName() {
+  let name = prompt('輸入新的名字');
+  para.textContent = 'Player 1: ' + name;
+}
+參考資料:https://www.youtube.com/watch?v=CLUPkcLQm64
+https://www.youtube.com/watch?v=Ml78vnNTBLw
+https://www.youtube.com/watch?v=yZwlW5INhgk&t=17s
+https://zh.wikipedia.org/zh-tw/HTML
+https://zh.wikipedia.org/zh-tw/%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8
+https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/First_steps/What_is_JavaScript
